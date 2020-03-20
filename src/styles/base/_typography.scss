@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+body{
+	font-family: $poppins;
+}
+h1,h3{
+	color:$VeryDarkBlue;
+}
+.bold200{
+	font-weight: 200;
+}
+.bold400{
+	font-weight: 400;
+}
+.bold700{
+	font-weight: 700;
+}
+p{
+	color:$GrayishBlue;
+}
+header{
+	line-height: 1.7;
+	margin:0 0 80px 0;
+	h1{
+		font-size: 25px;
+		text-align: center;
+		margin:0 0 10px 0;
+		@media screen and (min-width:1126px){
+			font-size: 35px;
+		}
+		span{
+			display:block;
+		}
+	}
+	p{
+		text-align: center;
+		font-size: 17px;
+	}
+}
+
+main .items{
+	line-height: 1.7;
+	h2{
+		font-size: 22px;
+	}
+}

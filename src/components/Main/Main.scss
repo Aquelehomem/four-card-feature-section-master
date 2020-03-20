@@ -1,0 +1,73 @@
+@import '../../styles/abstracts/variables';
+
+main{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1440px;
+	margin: 0 auto;
+	@media screen and (min-width: 1126px){
+		flex-direction: row;
+		position: relative;
+		height: 600px;
+	}
+		.items{
+		height: 221px;
+		max-width: 350px;
+		background-color: white;
+		padding:27px;
+		line-height: 1.6;
+		position: relative;
+		margin:0 auto 25px auto;
+		border-radius: 6px;
+		border-top: solid black 5px;
+		align-items: center;
+		box-shadow: 0px 8px 18px 3px rgba(0,0,0,0.13);
+		@media screen and (min-width:1126px){
+				position: absolute;
+				width:26.5%;
+			}
+		&.blue{
+			border-top-color: $Blue;
+			@media screen and (min-width:1126px){
+				top:0;
+				right:0;
+				bottom:0;
+				margin:auto 0;
+				z-index: 1000;
+			}
+		}
+		&.orange{
+			border-color: $Orange;
+			@media screen and (min-width:1126px){
+				bottom:0;
+				z-index: 1000;
+			}
+		}
+		&.red{
+			border-color:$Red;
+			@media screen and (min-width:1126px){
+				top:0;
+				z-index: 1000;
+			}
+		}
+		&.green{
+			border-color:$Cyan; 
+			@media screen and (min-width:1126px){
+				top:0;
+				left:0;
+				bottom:0;
+				margin:auto 0;
+				z-index: 1000;
+			}
+		}
+			img{
+				position: absolute;
+				display:block;
+				margin:0 0 0 auto;
+				bottom:30px;
+				right:30px;
+			}
+	}
+}
